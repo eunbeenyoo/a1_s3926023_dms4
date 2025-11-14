@@ -438,7 +438,7 @@ Rules:
 
     async function startQuoteFlow() {
       addAssistantMessage(
-        "Thank you. I’ll start by offering you a few gentle quotes. Choose the one that feels closest to you."
+        "Thanks. Before recommending books, I’d like to share a few gentle quotes that might offer a bit of comfort or perspective based on what you shared. Choose the one that feels closest to you — I’ll then suggest books that match both your emotions and the quote."
       );
       renderLoadingRight("Preparing quotes for you…");
 
