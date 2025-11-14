@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Therapeutic Book Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <section class="left-pane">
+      <div class="header-row">
+        <div class="title-block">
+          <h1>Therapeutic Book Finder</h1>
+          <p>A gentle conversation that turns your feelings into reading companions.</p>
+        </div>
+        <div class="badge">
+          <span>emotion-aware</span> · AI assisted
+        </div>
+      </div>
+
+      <div id="chatWindow" class="chat-window"></div>
+
+      <div class="input-area">
+        <div class="step-label" id="stepLabel"></div>
+        <div id="chipRow" class="chip-row"></div>
+        <div class="input-small-label" id="inputHint"></div>
+        <div class="text-input-row">
+          <input id="textInput" type="text" placeholder="" />
+          <button id="sendButton" class="send-btn">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-pane">
+      <div class="right-top" id="rightTop">
+        <div class="results-header">
+          <h2>Quotes</h2>
+          <span>Pick one that feels close to you.</span>
+        </div>
+        <p style="font-size:0.84rem; color:var(--text-sub); margin:2px 0 0 0;">
+          First, we'll explore a few quotes together. When something resonates, I'll suggest books that match both your feelings and your reading taste.
+        </p>
+      </div>
+
+      <div class="right-footer" id="rightFooter">
+        <button id="restartButton" class="restart-btn">
+          <span>↺</span> Start over
+        </button>
+        <span>Choose different feelings or book types from the beginning.</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
